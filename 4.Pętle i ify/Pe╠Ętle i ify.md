@@ -11,6 +11,7 @@ wypisz w konsoli, która z nich jest największa.
 #### Zadanie 3
 W konsoli stwórz pętle, która 10 razy wypisze w konsoli tekst "Lubię JavaScript".
 
+
 #### Zadanie 4
 W konsoli stwórz zmienną ```result``` i przypisz do niej liczbę 0. Następnie stwórz pętle, która doda do siebie liczby od 1 do 10.
 
