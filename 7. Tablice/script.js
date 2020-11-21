@@ -159,3 +159,33 @@ const table1 = [1,4,6,8];
 const table2 = [56,23,3,4];
 
 console.log(func(table1,table2));
+
+
+// Zadanie 9
+/*
+Napisz funkcję która przyjmie jako parametr tablice oraz element tablicy. Następnie funkcja ma zwrócić nową tablicę na podstawie pierwszego parametru ale bez elementu z drugiego parametru
+ */
+
+function functionNine(tabOne, deleteWord) {
+    for(var i = 0; i < tabOne.length; i++) {
+        if(tabOne[i] == deleteWord) {
+            tabOne.splice(i,1);
+        }
+    }
+    return tabOne;
+}
+
+console.log(functionNine(["kot", "pies", "żaba"], "pies"));
+
+//Zadanie 10
+/*
+Napisz funkcję która przyjmuje jako parametr tablicę z numberami a następnie zwraca nową tablicę na podstawie parametru gdzie każdy element tablicy ma odwrotny znak.
+*/
+function changeSign(tabOne) {
+    for(var i = 0; i < tabOne.length; i++) {
+        tabOne[i] = tabOne[i] * -1;
+    }
+    return tabOne;
+}
+
+console.log(changeSign([1,-2,3,4,-5,6,-7]));
