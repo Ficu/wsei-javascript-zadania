@@ -1,7 +1,7 @@
 //Zadanie 1:
 
 console.log("Marcin");
-
+ 
 
 //Zadanie 2: 
 
