@@ -12,6 +12,7 @@ var car = {
 };
 
 console.log(car);
+console.log(car.make);
 
 /*
 #### Zadanie 2
@@ -20,14 +21,18 @@ Na podstawie obiektu z zadania 1 dopisz do niego metodę zmieniającą jego nazw
 
 */
 
-var car.changeName = function(name) {
-        Object.assign(name, this);
-        return name;
+var car = {
+    make: "Mercedes",
+    color: "Grey",
+    year: "2020",
+    changeMake: function newMake(newMake)
+    {
+        this.make = newMake;
     }
-var mercedes = {};
-car.changeName(mercedes);
+};
 
-console.log(mercedes);
+car.changeMake("BMW");
+console.log(car.make);
 
 /*
 #### Zadanie 3
@@ -68,7 +73,10 @@ var newCar = {
     price: 1200
 }
 
-console.log(newCar);
+for (let key in car) {
+    console.log(key + ": " + car[key]);
+
+}
 /*
 #### Zadanie 5
 
@@ -77,9 +85,10 @@ Stwórz dowolny obiek w obiekcie car. Następnie wypisz w konsoli jego właściw
 car.newColors = {
     color1: "Brown",
     color2: "Green"
-}
+};
 
 console.log(car.newColors);
+console.log(car.newColors.color1);
 /*
 #### Zadanie 6
 
@@ -92,3 +101,6 @@ car.absSystem = "yes";
 car.helloFunction = function() {
     console.log("Hello");
 };
+
+car.helloFunction();
+console.log(car.absSystem);
