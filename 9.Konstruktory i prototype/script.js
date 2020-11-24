@@ -27,7 +27,7 @@ console.log(personOne);
 Stwórz konstruktor kalkulatora z czterema podstawowymi działaniami. Konstruktor powinien posiadać pamięć operacji oraz metody do odpowiednich działań. Dopisz również metodę wypisującą zawartość pamięci oraz czyszczącą zawartość pamięci kalkulatora. Stwóz na podstawie konstruktora minimum dwa niezależne kalkulatory.
 */
 
-function Calculator(numerOne, numberTwo) {
+function Calculator() {
     this.memory = [];
     this.sum = function(a, b) {
         this.memory.push('Dodawnaie');
@@ -56,46 +56,9 @@ console.log(calculatorOne.sum(5, 6));
 console.log(calculatorOne.mult(5, 6));
 
 console.log(calculatorOne.memory);
-console.log(calculatorOne.clearMemory);
+calculatorOne.clearMemory();
 
 console.log(calculatorOne.memory);
-
-/* ZAJECIA */
-function Calculator() {
-    this.memory = [];
-    this.sum = function(a, b) {
-        this.memory.push('Dodawanie');
-        return a + b;
-    }
-    
-    this.sub = function(a, b) {
-        this.memory.push('Odejmowanie');
-        return a - b;
-    }
-    
-    this.mult = function(a, b) {
-        this.memory.push('Monożenie');
-        return a * b;
-    }
-    
-    this.div = function(a, b) {
-        this.memory.push('Dzielnie');
-        return a / b;
-    }
-    
-    this.clear = function(a, b) {
-        this.memory = [];
-    }
-    
-}
-
-const calc = new Calculator();
-console.log(calc.sum(2,5));
-console.log(calc.sum(5,5));
-console.log(calc.memory)
-calc.clear();
-console.log(calc.memory)
-
 
 //zadanie3
 /*
