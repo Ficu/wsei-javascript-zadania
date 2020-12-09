@@ -44,4 +44,4 @@ nextFunction("li");
 nextFunction("ul");
 nextFunction("span");
 nextFunction("div.list span");
-nextFunction("div#spans span");
+nextFunction("div#spans span");d

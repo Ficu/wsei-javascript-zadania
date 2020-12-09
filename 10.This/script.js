@@ -60,6 +60,8 @@ person2.showInfo();
 person2.addAge();
 person2.showInfo();
 
+
+
 /*
 #### Zadanie 2
 
@@ -148,7 +150,7 @@ function Ladder(steps) {
             console.log("Musisz najpierw zejść z drabiny");
         } else {
             console.log("Rozpoczynamy wchodzenie na drabinę");
-            for(int i; i++; i<=this.steps) {
+            for(var i = 0; i<=this.steps; i++) {
                 console.log("Stopien " + this.where++);
             }
         }
@@ -159,7 +161,7 @@ function Ladder(steps) {
             console.log("Musisz najpierw wejsc na drabine");
         } else {
             console.log("Rozpoczynamy schodzenie z drabiny");
-            for(int i; i++; i<=this.steps) {
+            for(var i = 0; i<=this.steps; i++) {
                 console.log("Stopien " + this.where--);
             }
         }

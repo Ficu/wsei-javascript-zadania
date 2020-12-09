@@ -34,4 +34,27 @@ console.log(foo.children[middleElem()-1]);
 Napisz funkcję która przyjmie jako parametr element id="ex2". Następnie doda nasłuchiwanie eventu click na tym elemencie. Jeśli czerwony kwadrat zostanie kliknięty pobierz tekst z wewnętrzego diva tego elementu i wyświetl go w konsoli.
 */
 
-function 
+const listenEvent = (element) => {
+    element.addEventListener("click", () => {
+        console.log(element.children[0].children[0].children[0].children[1].
+                   children[0].children[0].textContent);
+    })
+}
+
+ex2Element = document.querySelector("#ex2");
+listenEvent(ex2Element);
+
+//zadanie 3
+
+const add = (elements) => {
+    for(var i = 0; i < elements.length; i++){
+       
+        elements[i].addEventListener("click", function(){
+            this.nextElementSibling.style.display = "block";
+        })
+   }
+}
+
+add(document.querySelectorAll('#ex3 button'));
+
+//UKRYCIE DO DOROBIENIA
