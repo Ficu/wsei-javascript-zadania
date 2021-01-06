@@ -100,3 +100,65 @@ for (var i=0;i<z;i++){
     x +=' *';
 }
 
+//c)
+for (let i = 0; i < 5; i++)
+{
+    let row = '';
+    for (let j = 0; j < 5 - i; j++)
+    {
+        row += ' ';
+    }
+
+    for (let k = 0; k < 1 + i * 2; k++)
+    {
+        row += '*';
+    }
+    console.log(row);
+}
+//d)
+for (let i = 1; i <= 11; i++)
+{
+    let row = '';
+    let turn = i > 6 ? 6 - i % 6 : i % 6;
+    for (let j = 0; j < 5; j++)
+    {
+        if (turn === 0)
+        {
+            row += '-';
+        }
+        else if (j >= turn)
+        {
+            row += j;
+        }
+        else
+        {
+            row += "*";
+        }
+    }
+
+    console.log(row);
+}
+//e)
+for (let i = 1; i <= 5; i++)
+{
+    let row = '';
+    for (let j = 0; j < 5 - i; j++)
+    {
+        row += ' ';
+    }
+
+    for (let k = 0; k < i; k++)
+    {
+        row += '*';
+        if (k < i - 1)
+        {
+            row += ' ';
+        }
+    }
+    console.log(row);
+}
+
+for (let i = 1; i <= 3; i++)
+{
+    console.log('    *');
+}
