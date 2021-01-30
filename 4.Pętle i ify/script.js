@@ -1,7 +1,7 @@
 let value1 = 10;
 let value2 = 20;
 
-if (value1 > value 2) {
+if (value1 > value2) {
     console.log(value1);
 } else {
     console.log(value2);
