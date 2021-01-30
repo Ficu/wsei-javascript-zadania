@@ -50,11 +50,43 @@ const add = (elements) => {
     for(var i = 0; i < elements.length; i++){
        
         elements[i].addEventListener("click", function(){
+            /*zadanie4 start */
+            var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            this.parentElement.style.backgroundColor = randomColor;
+            /*zadanie4 stop*/
+
+            if(this.nextElementSibling.style.display == "none")
             this.nextElementSibling.style.display = "block";
+            else
+            this.nextElementSibling.style.display = "none";
         })
    }
 }
 
 add(document.querySelectorAll('#ex3 button'));
 
-//UKRYCIE DO DOROBIENIA
+
+//zadanie 5
+
+let elements = document.querySelectorAll('#ex5 > div');
+let listElements = document.querySelectorAll('#ex5 > ul > li');
+
+elements.forEach(elem => {
+    elem.addEventListener('mouseover', (event) => {
+        let color = event.target.style.backgroundColor;
+
+        listElements[0].style.backgroundColor = color;
+
+        listElements[listElements.length - 1].style.backgroundColor = color;
+
+        listElements.forEach((el, key) => {
+            if (key % 2 == 0) {
+                el.style.backgroundColor = color;
+            }
+        });
+
+        listElements.forEach(el => el.style.backgroundColor = color);
+
+        listElements[0].parentElement.style.backgroundColor = color;
+    });
+})

@@ -48,32 +48,44 @@ Stwórz tablicę tylko z elementami typu number. W konsoli wypisz:
 const tab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 let suma = 0;
-for(int x = 0; x<=tab.length; x++) {
+for(let x = 0; x<=tab.length-1; x++) {
     suma += tab[x];
 }
 
 console.log(suma);
 
+for(let x = 0; x<=tab.length-1; x++) {
+    subt -= tab[x];
+}
+
+console.log(subt);
+
 average = suma / tab.length;
 console.log(average);
 
+tab.forEach(item => {
+   if(item%2 == 0) console.log(item);
+ });
 
-suma = 0;
-for(int x = 0; x<=tab.length; x++) {
-    suma -= tab[x];
-}
+ tab.forEach(item => {
+    if(item%2 == 1) console.log(item);
+  });
 
-var max = table[0];
-table.forEach(item => {
+max = 0;
+tab.forEach(item => {
    if (item > max) max = item; 
 });
 console.log(max);
 
-var min = table[0];
-table.forEach(item => {
+min = max;
+tab.forEach(item => {
    if (item < min) min = item; 
 });
 console.log(min);
+
+for(let x = tab[tab.length-1]; x>=0; x--) {
+    console.log(tab[x]);
+}
 
 //zadanie 4
 
@@ -90,21 +102,7 @@ var table = [1,2,3,4,5,6];
 console.log(sum(table));
 
 //zadanie 5
-// function sum(t){
-//     var x = 0;
-//     for(var i = 0; i < t.length; i++){
-//         x += t[i];
-//     }
-//     let average = x / t.length;
 
-//     for(var i = 0; i < t.length; i++){
-//         console.log(t[i] * average);
-//     }
-// }
-
-// var table = [1,2,3,4,5,6];
-
-// console.log(sum(table));
 
 function funct(tab){
     var avg = 0;

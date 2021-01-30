@@ -1,6 +1,6 @@
 //Zadanie 1:
 
-console.log("Marcin");
+console.log("Jakub");
  
 
 //Zadanie 2: 
@@ -17,3 +17,4 @@ console.log("Hello World");
             
 // w pkt 1 pojawia się string
 //w pkt 2 pojawia się błąd bo nie ma takiej zmiennej
+// pkt 3 również błąd

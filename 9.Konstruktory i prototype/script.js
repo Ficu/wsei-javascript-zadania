@@ -16,11 +16,32 @@ function Person(name, surname, age, country, city, language) {
 
 const personOne = new Person("person1", "test", 20, "Polska", "Krakow", "PL");
 const personSecond =  new Person("person2", "test2", 25, "Polska", "Krakow", "PL");
+const personThird = new Person("person3", "test3", 30, "Poland", "Krakow", "PL");
+const personFourth = new Person("person4", "test4", 35, "Poland", "Krakow", "PL");
+const personFifth = new Person("person5", "test5", 40, "Poland", "Krakow", "PL");
 
 personOne.setAge(15);
 personOne.setCity("Warszawa");
 
+personSecond.setAge(20);
+personSecond.setCity("Wieliczka");
+
+personThird.setAge(25);
+personThird.setCity("Władysławowo");
+
+personFourth.setAge(30);
+personFourth.setCity("Wólka");
+
+personFifth.setAge(35);
+personFifth.setCity("Wieluń");
+
 console.log(personOne);
+console.log(personSecond);
+console.log(personThird);
+console.log(personFourth);
+console.log(personFifth);
+
+
 
 //zadanie 2
 /*
