@@ -31,6 +31,12 @@ document.querySelector('#input-test').addEventListener("change", function (event
   console.log(event.type);
 });
 
+//2
+
+document.querySelector('#ex2').addEventListener('click', (event) => {
+  event.target.nextElementSibling.innerText = event.target.dataset.text;
+});
+
 //3
 
 function switchColor() {
@@ -47,6 +53,7 @@ function switchColor() {
 switchColor();
 
 //4
+
 
 
 

@@ -90,3 +90,9 @@ elements.forEach(elem => {
         listElements[0].parentElement.style.backgroundColor = color;
     });
 })
+
+let finder = document.querySelector('#ex6');
+
+console.log(finder.firstElementChild.firstElementChild.firstElementChild);
+console.log(finder.firstElementChild.parentElement.firstElementChild.firstElementChild.nextElementSibling.parentElement);
+console.log(finder.parentElement.firstElementChild.parentElement.children[1].firstElementChild.firstElementChild.firstElementChild);
