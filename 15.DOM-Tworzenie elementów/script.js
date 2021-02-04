@@ -225,25 +225,7 @@ more.addEventListener('click', (e) => {
     formTab.appendChild(childrenNumber);
     
 });
-/*
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-</table>
-*/
+
 var table = document.createElement("table");
 var tr = document.createElement("tr");   
 
@@ -350,7 +332,8 @@ function stringSearch(string){
   object.search();
 }
 
-stringSearch("Ala ma narty");
+stringSearch("Małysz ma narty");
+//stringSearch("Ala ma narty");
 
 //13
 
